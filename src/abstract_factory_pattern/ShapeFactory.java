@@ -1,10 +1,11 @@
-package factoryPattern;
+package abstract_factory_pattern;
 
 /**
- * Created by prime on 5/22/15.
+ * Created by prime on 5/26/15.
  */
-public class ShapeFactory {
-    public Shape getShape (String shape) {
+public class ShapeFactory extends AbstractFactory {
+    @Override
+    public Shape getShape(String shape) {
         if(shape.equalsIgnoreCase("circle")) {
             return new Circle();
         } else if (shape.equalsIgnoreCase("rectangle")) {
@@ -13,6 +14,11 @@ public class ShapeFactory {
             return new Square();
         }
 
+        return null;
+    }
+
+    @Override
+    public Color getColor(String color) {
         return null;
     }
 }
