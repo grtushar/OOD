@@ -1,0 +1,3 @@
+The structure of the state pattern generally looks like following - 
+![State pattern structure](https://github.com/shadhin/OOD/blob/master/resource/images/state_pattern_structure.png "")
+In our example,the vending machine is the context class. It keeps track of it's current state. When a trigger occurs and a request is asked of a context object, it delegates to a state object to actually handle the request. The state pattern is useful when you need to change the behavior of an object based upon changes to its internal state. You can also use the pattern to simplify methods with long conditionals that depend on the object state.
