@@ -8,7 +8,7 @@ public class Follower implements Observer {
     }
 
     @Override
-    public void update(String name) {
+    public void update(String channelStatus) {
 
     }
 

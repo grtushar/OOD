@@ -16,6 +16,7 @@ public class Channel implements Subject {
 
     public void setStatus(String status) {
         this.status = status;
+        notifyAllObservers();
     }
 
     @Override
@@ -31,7 +32,7 @@ public class Channel implements Subject {
     @Override
     public void notifyAllObservers() {
         for (Observer observer: observers) {
-            observer.update(channelName);
+            observer.update(this.status);
         }
     }
 }
