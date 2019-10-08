@@ -1,21 +1,7 @@
 package observer_pattern;
 
-import java.util.ArrayList;
-
-public class Subject {
-    private ArrayList<Observer> observers = new ArrayList<>();
-
-    public void registerObserver(Observer observer) {
-        observers.add(observer);
-    }
-
-    public void unregisterObserver(Observer observer) {
-        observers.remove(observer);
-    }
-
-    public void notifyObservers() {
-        for (Observer observer: observers) {
-            observer.update();
-        }
-    }
+public interface Subject {
+    void registerObserver(Observer observer);
+    void unregisterObserver(Observer observer);
+    void notifyAllObservers();
 }
