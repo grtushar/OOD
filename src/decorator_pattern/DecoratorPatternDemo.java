@@ -17,5 +17,15 @@ public class DecoratorPatternDemo {
 
         Shape redDottedCircle = new DottedShapeDecorator(redCircle);
         redDottedCircle.draw();
+
+        System.out.println("---------------");
+
+        Shape rectangle = new DottedShapeDecorator(
+                                new RedColorShapeDecorator(
+                                        new RectangleShape()
+                                )
+                          );
+
+        rectangle.draw();
     }
 }
