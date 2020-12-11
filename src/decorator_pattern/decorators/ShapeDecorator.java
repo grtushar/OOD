@@ -1,4 +1,6 @@
-package decorator_pattern;
+package decorator_pattern.decorators;
+
+import decorator_pattern.Shape;
 
 abstract class ShapeDecorator implements Shape {
     Shape shapeToDecorate;

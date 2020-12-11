@@ -1,7 +1,9 @@
-package decorator_pattern;
+package decorator_pattern.decorators;
+
+import decorator_pattern.Shape;
 
 public class DottedShapeDecorator extends ShapeDecorator {
-    DottedShapeDecorator(Shape shapeToDecorate) {
+    public DottedShapeDecorator(Shape shapeToDecorate) {
         super(shapeToDecorate);
     }
 

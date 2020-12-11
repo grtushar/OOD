@@ -1,7 +1,9 @@
-package decorator_pattern;
+package decorator_pattern.decorators;
 
-public class RedShapeDecorator extends ShapeDecorator {
-    RedShapeDecorator(Shape shapeToDecorate) {
+import decorator_pattern.Shape;
+
+public class RedColorShapeDecorator extends ShapeDecorator {
+    public RedColorShapeDecorator(Shape shapeToDecorate) {
         super(shapeToDecorate);
     }
 
